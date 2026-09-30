@@ -3,206 +3,852 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>タイムカプセル開封・返却のご案内</title>
-  <meta name="description" content="25年前にお預かりしたタイムカプセルの開封・返却に関する公式案内ページです。">
-  <meta property="og:title" content="タイムカプセル開封・返却のご案内">
-  <meta property="og:description" content="25年前のタイムカプセルが満期を迎えました。開催日時・場所・最新情報はこちら。">
+
+  <meta name="description"
+        content="25年前にお預かりしたタイムカプセルの開封・返却に関する公式案内ページです。">
+
+  <meta property="og:title"
+        content="タイムカプセル開封・返却のご案内">
+
+  <meta property="og:description"
+        content="25年前のタイムカプセルが満期を迎えました。開催日時・場所・最新情報はこちら。">
+
   <meta property="og:type" content="website">
 
   <style>
-    :root{
-      --bg:#f6f4ef;--card:#fff;--text:#292929;--muted:#6c6c6c;
-      --accent:#83643f;--accent-soft:#f2eadf;--border:#e4ded3;--ok:#52745b;
+    :root {
+      --bg:#f6f4ef;
+      --card:#fff;
+      --text:#292929;
+      --muted:#6c6c6c;
+      --accent:#83643f;
+      --accent-soft:#f2eadf;
+      --border:#e4ded3;
+      --ok:#52745b;
     }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
-    .wrap{max-width:920px;margin:0 auto;padding:24px}
-    header{padding:56px 0 26px;text-align:center}
-    .eyebrow{font-size:.86rem;color:var(--accent);letter-spacing:.16em;margin-bottom:10px}
-    h1{font-size:clamp(1.95rem,5vw,3.15rem);line-height:1.3;margin:0 0 14px}
-    .lead{font-size:1.04rem;color:var(--muted);max-width:700px;margin:0 auto 16px}
-    .updated{display:inline-block;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.84rem}
-    nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:8px 0 26px}
-    nav a{text-decoration:none;background:#fff;border:1px solid var(--border);padding:7px 12px;border-radius:999px;font-size:.9rem;color:var(--text)}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px;margin:20px 0;box-shadow:0 8px 24px rgba(0,0,0,.035)}
-    h2{font-size:1.27rem;margin:0 0 16px}
-    .info{display:grid;grid-template-columns:120px 1fr;gap:12px 16px}
-    .label{font-weight:700;color:var(--accent)}
-    .notice{background:#fffaf1;border-left:4px solid var(--accent);padding:16px 18px;border-radius:10px}
-    .status{display:grid;gap:12px}
-    .status-item{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:start;border-bottom:1px solid var(--border);padding-bottom:12px}
-    .status-item:last-child{border-bottom:0;padding-bottom:0}
-    .status-date{font-size:.88rem;color:var(--muted)}
-    .badge{display:inline-block;font-size:.78rem;padding:2px 9px;border-radius:999px;background:#edf4ef;color:var(--ok);margin-left:7px}
-    .video-placeholder{display:grid;place-items:center;min-height:260px;border:1px dashed #b8aa98;border-radius:14px;color:var(--muted);background:#fcfbf8;text-align:center;padding:28px}
-    .sponsors{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .sponsor{min-height:95px;border:1px solid var(--border);border-radius:14px;display:grid;place-items:center;text-align:center;padding:14px;color:var(--muted);background:#fcfbf8}
-    .map{border:1px dashed #b8aa98;border-radius:14px;padding:30px;text-align:center;color:var(--muted);background:#fcfbf8}
-    .share{display:flex;flex-wrap:wrap;gap:10px}
-    .share a,.share button{appearance:none;border:1px solid var(--border);background:#fff;color:var(--text);border-radius:10px;padding:9px 13px;text-decoration:none;font:inherit;cursor:pointer}
-    .share a:hover,.share button:hover,nav a:hover{background:var(--accent-soft)}
-    .small{font-size:.9rem;color:var(--muted)}
-    footer{text-align:center;color:var(--muted);font-size:.88rem;padding:36px 0 24px}
-    a{color:var(--accent)}
+
+    * {
+      box-sizing:border-box;
+    }
+
+    html {
+      scroll-behavior:smooth;
+    }
+
+    body {
+      margin:0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        Meiryo,
+        sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.8;
+    }
+
+    .wrap {
+      max-width:920px;
+      margin:0 auto;
+      padding:24px;
+    }
+
+    header {
+      padding:56px 0 26px;
+      text-align:center;
+    }
+
+    .eyebrow {
+      font-size:.86rem;
+      color:var(--accent);
+      letter-spacing:.16em;
+      margin-bottom:10px;
+    }
+
+    h1 {
+      font-size:clamp(1.95rem,5vw,3.15rem);
+      line-height:1.3;
+      margin:0 0 14px;
+    }
+
+    .lead {
+      font-size:1.04rem;
+      color:var(--muted);
+      max-width:700px;
+      margin:0 auto 16px;
+    }
+
+    .message {
+      margin:24px auto 0;
+      max-width:700px;
+      padding:18px 20px;
+      background:#fffaf1;
+      border:1px solid var(--border);
+      border-radius:14px;
+      font-weight:700;
+      color:var(--accent);
+    }
+
+    .updated {
+      display:inline-block;
+      margin-top:18px;
+      padding:5px 12px;
+      border-radius:999px;
+      background:var(--accent-soft);
+      color:var(--accent);
+      font-size:.84rem;
+    }
+
+    nav {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:8px;
+      margin:8px 0 26px;
+    }
+
+    nav a {
+      text-decoration:none;
+      background:#fff;
+      border:1px solid var(--border);
+      padding:7px 12px;
+      border-radius:999px;
+      font-size:.9rem;
+      color:var(--text);
+    }
+
+    nav a:hover {
+      background:var(--accent-soft);
+    }
+
+    .card {
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:28px;
+      margin:20px 0;
+      box-shadow:0 8px 24px rgba(0,0,0,.035);
+    }
+
+    h2 {
+      font-size:1.27rem;
+      margin:0 0 16px;
+    }
+
+    .info {
+      display:grid;
+      grid-template-columns:120px 1fr;
+      gap:12px 16px;
+    }
+
+    .label {
+      font-weight:700;
+      color:var(--accent);
+    }
+
+    .notice {
+      background:#fffaf1;
+      border-left:4px solid var(--accent);
+      padding:16px 18px;
+      border-radius:10px;
+    }
+
+    .status {
+      display:grid;
+      gap:12px;
+    }
+
+    .status-item {
+      display:grid;
+      grid-template-columns:110px 1fr;
+      gap:14px;
+      align-items:start;
+      border-bottom:1px solid var(--border);
+      padding-bottom:12px;
+    }
+
+    .status-item:last-child {
+      border-bottom:0;
+      padding-bottom:0;
+    }
+
+    .status-date {
+      font-size:.88rem;
+      color:var(--muted);
+    }
+
+    .badge {
+      display:inline-block;
+      font-size:.78rem;
+      padding:2px 9px;
+      border-radius:999px;
+      background:#edf4ef;
+      color:var(--ok);
+      margin-left:7px;
+    }
+
+    .video-placeholder {
+      display:grid;
+      place-items:center;
+      min-height:260px;
+      border:1px dashed #b8aa98;
+      border-radius:14px;
+      color:var(--muted);
+      background:#fcfbf8;
+      text-align:center;
+      padding:28px;
+    }
+
+    .sponsors {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+    }
+
+    .sponsor {
+      min-height:95px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:14px;
+      color:var(--muted);
+      background:#fcfbf8;
+    }
+
+    .map {
+      border:1px dashed #b8aa98;
+      border-radius:14px;
+      padding:30px;
+      text-align:center;
+      color:var(--muted);
+      background:#fcfbf8;
+    }
+
+    .share {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .share a,
+    .share button {
+      appearance:none;
+      border:1px solid var(--border);
+      background:#fff;
+      color:var(--text);
+      border-radius:10px;
+      padding:9px 13px;
+      text-decoration:none;
+      font:inherit;
+      cursor:pointer;
+    }
+
+    .share a:hover,
+    .share button:hover {
+      background:var(--accent-soft);
+    }
+
+    .small {
+      font-size:.9rem;
+      color:var(--muted);
+    }
+
+    #copy-result {
+      min-height:1.5em;
+      margin-top:12px;
+    }
+
+    footer {
+      text-align:center;
+      color:var(--muted);
+      font-size:.88rem;
+      padding:36px 0 24px;
+    }
+
+    a {
+      color:var(--accent);
+    }
+
+    @media (max-width:650px) {
+      .info {
+        grid-template-columns:1fr;
+        gap:4px;
+      }
+
+      .label {
+        margin-top:8px;
+      }
+
+      .status-item {
+        grid-template-columns:1fr;
+        gap:4px;
+      }
+
+      .sponsors {
+        grid-template-columns:1fr;
+      }
+
+      .card {
+        padding:22px;
+      }
+    }
   </style>
 </head>
 
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="eyebrow">TIME CAPSULE 25 YEARS</div>
-      <h1>タイムカプセル<br>開封・返却のご案内</h1>
-      <p class="lead">25年前にお預かりしたタイムカプセルが満期を迎えました。開封・返却に関する最新情報を、このページでお知らせします。</p>
-      <div class="updated">最終更新：2026年9月27日</div>
-    </header>
 
-    <nav aria-label="ページ内メニュー">
-      <a href="#event">開催案内</a>
-      <a href="#news">最新情報</a>
-      <a href="#video">動画</a>
-      <a href="#sponsors">協賛・協力</a>
-      <a href="#access">返却会場案内</a>
-      <a href="#contact">お問い合わせ</a>
-    </nav>
+<div class="wrap">
 
-    <!-- 開封イベント（返却場所） -->
-    <section class="card" id="event">
-      <h2>開催日時・場所</h2>
-      <div class="info">
-        <div class="label">日時</div>
-        <div>令和8年11月22日（日）　9:00〜17:00</div>
+  <!-- =========================
+       ヘッダー
+       ========================= -->
 
-        <div class="label">場所</div>
-        <div>館林市城沼公民館</div>
+  <header>
 
-        <div class="label">住所</div>
-        <div>群馬県館林市松原1−22−22</div>
+    <div class="eyebrow">
+      TIME CAPSULE 25 YEARS
+    </div>
+
+    <h1>
+      タイムカプセル<br>
+      開封・返却のご案内
+    </h1>
+
+    <p class="lead">
+      25年前にお預かりしたタイムカプセルが満期を迎えました。
+      開封・返却に関する最新情報を、このページでお知らせします。
+    </p>
+
+    <div class="message">
+      25年前のタイムカプセルを、<br>
+      ひとり残らず皆さんのもとへ。
+    </div>
+
+    <div class="updated">
+      最終更新：2026年10月1日
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       ナビゲーション
+       ========================= -->
+
+  <nav aria-label="ページ内メニュー">
+
+    <a href="#event">開催案内</a>
+
+    <a href="#news">最新情報</a>
+
+    <a href="#video">動画</a>
+
+    <a href="#sponsors">協賛・協力</a>
+
+    <a href="#access">返却会場案内</a>
+
+    <a href="#contact">お問い合わせ</a>
+
+    <a href="#social">公式SNS</a>
+
+  </nav>
+
+
+  <!-- =========================
+       開催日時・返却場所
+       ========================= -->
+
+  <section class="card" id="event">
+
+    <h2>開催日時・場所</h2>
+
+    <div class="info">
+
+      <div class="label">
+        日時
       </div>
 
-      <p class="notice" style="margin-top:18px">
-        当日の詳細や変更事項がある場合は、このページで随時お知らせします。
-      </p>
-    </section>
+      <div>
+        令和8年11月22日（日） 9:00〜17:00
+      </div>
 
-    <!-- 最新情報（Descending） -->
-    <section class="card" id="news">
-      <h2>最新情報・進捗</h2>
-      <div class="status">
 
-        <!-- 最新を上に -->
-        <div class="status-item">
-          <div class="status-date">2026年10月5日</div>
-          <div>
-            <strong>タイムカプセル掘り出し予定</strong><br>
-            <span class="badge">NEW</span><br>
-            <span class="small">
-              当日9:00より掘り出しを行います（場所：たてばやし向井千秋記念子ども科学館）。
-            </span>
-          </div>
+      <div class="label">
+        場所
+      </div>
+
+      <div>
+        館林市城沼公民館
+      </div>
+
+
+      <div class="label">
+        住所
+      </div>
+
+      <div>
+        群馬県館林市松原1−22−22
+      </div>
+
+    </div>
+
+
+    <p class="notice" style="margin-top:18px">
+
+      当日の詳細や変更事項がある場合は、
+      このページで随時お知らせします。
+
+    </p>
+
+  </section>
+
+
+  <!-- =========================
+       最新情報
+       ========================= -->
+
+  <section class="card" id="news">
+
+    <h2>最新情報・進捗</h2>
+
+    <div class="status">
+
+
+      <!-- 2026年10月5日 -->
+
+      <div class="status-item">
+
+        <div class="status-date">
+          2026年10月5日
         </div>
 
-        <div class="status-item">
-          <div class="status-date">2026年9月10日</div>
-          <div>
-            <strong>案内ページを公開しました</strong>
-          　<span class="small">開催日時・場所などの基本情報を掲載しました。</span>
-          </div>
+        <div>
+
+          <strong>
+            タイムカプセル掘り出し予定
+          </strong>
+
+          <span class="badge">
+            予定
+          </span>
+
+          <br><br>
+
+          <span class="small">
+
+            10月5日 9:00より、
+            たてばやし向井千秋記念子ども科学館にて
+            タイムカプセルの掘り出し作業を行う予定です。
+
+            <br><br>
+
+            施設の特性や運営上の都合により、
+            掘り出し作業を実施できる日が限られているため、
+            この日に作業を行います。
+
+            <br><br>
+
+            掘り出したタイムカプセルは、
+            11月22日の返却に向けて準備を進めます。
+
+          </span>
+
         </div>
 
       </div>
-    </section>
 
-    <!-- 動画 -->
-    <section class="card" id="video">
-      <h2>動画</h2>
-      <p>準備の様子、当時の写真、開封当日の映像などを掲載します</p>
 
-      <div class="video-placeholder">
-        YouTube動画公開後、ここに埋め込みます。<br>
-        <span class="small">限定公開動画の埋め込み</span>
-      </div>
-    </section>
+      <!-- 2026年10月1日 -->
 
-    <!-- 協賛 -->
-    <section class="card" id="sponsors">
-      <h2>協賛・協力</h2>
-      <p class="small">協賛・協力いただく企業・団体が決まり次第、こちらに掲載します。</p>
+      <div class="status-item">
 
-      <div class="sponsors">
-        <div class="sponsor">協賛企業・団体<br>ロゴ掲載欄</div>
-        <div class="sponsor">協力企業・団体<br>ロゴ掲載欄</div>
-        <div class="sponsor">協力者・団体<br>掲載欄</div>
-      </div>
-    </section>
+        <div class="status-date">
+          2026年10月1日
+        </div>
 
-    <!-- 返却会場案内（城沼公民館ピンポイント） -->
-    <section class="card" id="access">
-      <h2>返却会場案内</h2>
-      <div class="map">
-        <a href="https://www.google.com/maps?q=群馬県館林市松原1-22-22&ll=36.243013,139.537889&z=18"
-           target="_blank" rel="noopener"
-           title="館林市城沼公民館の地図を開く">
-          Googleマップで開く
-        </a>
-      </div>
-    </section>
+        <div>
 
-    <!-- お問い合わせ -->
-    <section class="card" id="contact">
-      <h2>お問い合わせ</h2>
-      <p>
-        市民タイムカプセル事務局<br>
-        メール：tcapjimu@gmail.com
-      </p>
-    </section>
+          <strong>
+            公式Instagramで情報発信を開始しました
+          </strong>
 
-    <!-- SNS連携 -->
-    <section class="card">
-      <h2>SNSで共有</h2>
-      <p class="small">当時参加された方やお知り合いへの周知にご協力ください。</p>
+          <span class="badge">
+            NEW
+          </span>
 
-      <div class="share">
-        <a id="share-x" href="#" target="_blank" rel="noopener">Xで共有</a>
-        <a id="share-facebook" href="#" target="_blank" rel="noopener">Facebookで共有</a>
-        <a id="share-line" href="#" target="_blank" rel="noopener">LINEで共有</a>
-        <a id="share-instagram" href="#" target="_blank" rel="noopener">Instagramで共有</a>
-        <button id="copy-link" type="button">URLをコピー</button>
+          <br>
+
+          <span class="small">
+
+            25年前の写真や、
+            タイムカプセル返却に関する最新情報を
+            Instagramでもお知らせします。
+
+          </span>
+
+        </div>
+
       </div>
 
-      <p id="copy-result" class="small" aria-live="polite"></p>
-    </section>
 
-    <footer>© 市民タイムカプセル事務局</footer>
-  </div>
+      <!-- 2026年9月10日 -->
 
-  <script>
-    const pageUrl = encodeURIComponent(location.href);
-    const message = encodeURIComponent('市民タイムカプセル返却のご案内');
+      <div class="status-item">
 
-    document.getElementById('share-x').href =
-      `https://x.com/intent/post?text=${message}&url=${pageUrl}`;
+        <div class="status-date">
+          2026年9月10日
+        </div>
 
-    document.getElementById('share-facebook').href =
-      `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+        <div>
 
-    document.getElementById('share-line').href =
-      `https://line.me/R/msg/text/?${pageUrl}`;
+          <strong>
+            案内ページを公開しました
+          </strong>
 
-    // InstagramはURL共有ができないため案内リンク
-    document.getElementById('share-instagram').href =
-      `https://www.instagram.com`;
+          <br>
 
-    document.getElementById('copy-link').addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(location.href);
-        document.getElementById('copy-result').textContent =
-          'URLをコピーしました。Instagramなどに貼り付けてご利用ください。';
-      } catch (e) {
-        document.getElementById('copy-result').textContent =
-          'コピーできませんでした。ブラウザのアドレス欄からコピーしてください。';
+          <span class="small">
+
+            開催日時・場所などの基本情報を掲載しました。
+
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       動画
+       ========================= -->
+
+  <section class="card" id="video">
+
+    <h2>動画</h2>
+
+    <p>
+      準備の様子、当時の写真、
+      開封当日の映像などを掲載します。
+    </p>
+
+    <div class="video-placeholder">
+
+      YouTube動画公開後、
+      ここに埋め込みます。
+
+      <br>
+
+      <span class="small">
+        限定公開動画の埋め込み
+      </span>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       協賛・協力
+       ========================= -->
+
+  <section class="card" id="sponsors">
+
+    <h2>協賛・協力</h2>
+
+    <p class="small">
+
+      協賛・協力いただく企業・団体が決まり次第、
+      こちらに掲載します。
+
+    </p>
+
+
+    <div class="sponsors">
+
+      <div class="sponsor">
+
+        協賛企業・団体<br>
+        ロゴ掲載欄
+
+      </div>
+
+
+      <div class="sponsor">
+
+        協力企業・団体<br>
+        ロゴ掲載欄
+
+      </div>
+
+
+      <div class="sponsor">
+
+        協力者・団体<br>
+        掲載欄
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       返却会場
+       ========================= -->
+
+  <section class="card" id="access">
+
+    <h2>
+      返却会場案内
+    </h2>
+
+    <div class="map">
+
+      <a
+        href="https://www.google.com/maps?q=群馬県館林市松原1-22-22&ll=36.243013,139.537889&z=18"
+        target="_blank"
+        rel="noopener"
+        title="館林市城沼公民館の地図を開く">
+
+        Googleマップで開く
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       お問い合わせ
+       ========================= -->
+
+  <section class="card" id="contact">
+
+    <h2>
+      お問い合わせ
+    </h2>
+
+    <p>
+
+      市民タイムカプセル事務局
+
+      <br>
+
+      メール：
+
+      <a href="mailto:tcapjimu@gmail.com">
+
+        tcapjimu@gmail.com
+
+      </a>
+
+    </p>
+
+  </section>
+
+
+  <!-- =========================
+       公式SNS
+       ========================= -->
+
+  <section class="card" id="social">
+
+    <h2>
+      公式SNS・共有
+    </h2>
+
+    <p class="small">
+
+      公式SNSでも最新情報をお知らせしています。
+
+      <br>
+
+      当時参加された方やお知り合いへの
+      周知にもご協力ください。
+
+    </p>
+
+
+    <div class="share">
+
+
+      <!-- X -->
+
+      <a
+        id="official-x"
+        href="https://x.com/timecap_jimu"
+        target="_blank"
+        rel="noopener">
+
+        公式Xを見る
+
+      </a>
+
+
+      <!-- Instagram -->
+
+      <a
+        id="official-instagram"
+        href="https://www.instagram.com/timecap_jimu/"
+        target="_blank"
+        rel="noopener">
+
+        公式Instagramを見る
+
+      </a>
+
+
+      <!-- LINE共有 -->
+
+      <a
+        id="share-line"
+        href="#"
+        target="_blank"
+        rel="noopener">
+
+        LINEで共有
+
+      </a>
+
+
+      <!-- URLコピー -->
+
+      <button
+        id="copy-link"
+        type="button">
+
+        URLをコピー
+
+      </button>
+
+    </div>
+
+
+    <p
+      id="copy-result"
+      class="small"
+      aria-live="polite">
+    </p>
+
+  </section>
+
+
+  <!-- =========================
+       フッター
+       ========================= -->
+
+  <footer>
+
+    © 市民タイムカプセル事務局
+
+  </footer>
+
+</div>
+
+
+<!-- =========================
+     JavaScript
+     ========================= -->
+
+<script>
+
+  /*
+   * 現在表示しているホームページのURL
+   */
+
+  const pageUrl = location.href;
+
+
+  /*
+   * LINE共有
+   */
+
+  const lineLink =
+    document.getElementById('share-line');
+
+  if (lineLink) {
+
+    const lineMessage =
+      '市民タイムカプセル返却のご案内\n' +
+      pageUrl;
+
+    lineLink.href =
+      'https://line.me/R/msg/text/?' +
+      encodeURIComponent(lineMessage);
+
+  }
+
+
+  /*
+   * URLコピー
+   *
+   * HTTPS環境では Clipboard API を使用。
+   * 使用できない場合は旧方式に切り替えます。
+   */
+
+  const copyButton =
+    document.getElementById('copy-link');
+
+  const copyResult =
+    document.getElementById('copy-result');
+
+
+  async function copyPageUrl() {
+
+    try {
+
+      /*
+       * HTTPSなどの安全な環境
+       */
+
+      if (
+        navigator.clipboard &&
+        window.isSecureContext
+      ) {
+
+        await navigator.clipboard.writeText(
+          pageUrl
+        );
+
       }
-    });
-  </script>
-</body>
-</html>
+
+      /*
+       * Clipboard APIが使えない場合
+       */
+
+      else {
+
+        const temp =
+          document.createElement('textarea');
+
+        temp.value = pageUrl;
+
+        temp.setAttribute(
+          'readonly',
+          ''
+        );
+
+        temp.style.position = 'fixed';
+
+        temp.style.left = '-9999px';
+
+        temp.style.top = '0';
+
+        document.body.appendChild(temp);
+
+        temp.focus();
+
+        temp.select();
