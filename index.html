@@ -3,852 +3,226 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>タイムカプセル開封・返却のご案内</title>
-
-  <meta name="description"
-        content="25年前にお預かりしたタイムカプセルの開封・返却に関する公式案内ページです。">
-
-  <meta property="og:title"
-        content="タイムカプセル開封・返却のご案内">
-
-  <meta property="og:description"
-        content="25年前のタイムカプセルが満期を迎えました。開催日時・場所・最新情報はこちら。">
-
+  <title>市民タイムカプセル 開封・返却のご案内</title>
+  <meta name="description" content="館林市民タイムカプセルの掘り出しが2026年10月5日に無事完了しました。11月22日の返却日時・会場、最新情報、記録写真をご案内します。">
+  <link rel="canonical" href="https://shimintimec.github.io/stc/">
+  <meta property="og:title" content="市民タイムカプセル 開封・返却のご案内">
+  <meta property="og:description" content="25年の時を越え、タイムカプセルの掘り出しが無事完了。11月22日、持ち主の皆さまへ返却します。">
   <meta property="og:type" content="website">
-
+  <meta property="og:url" content="https://shimintimec.github.io/stc/">
   <style>
-    :root {
-      --bg:#f6f4ef;
-      --card:#fff;
-      --text:#292929;
-      --muted:#6c6c6c;
-      --accent:#83643f;
-      --accent-soft:#f2eadf;
-      --border:#e4ded3;
-      --ok:#52745b;
-    }
-
-    * {
-      box-sizing:border-box;
-    }
-
-    html {
-      scroll-behavior:smooth;
-    }
-
-    body {
-      margin:0;
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Hiragino Kaku Gothic ProN",
-        "Yu Gothic",
-        Meiryo,
-        sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.8;
-    }
-
-    .wrap {
-      max-width:920px;
-      margin:0 auto;
-      padding:24px;
-    }
-
-    header {
-      padding:56px 0 26px;
-      text-align:center;
-    }
-
-    .eyebrow {
-      font-size:.86rem;
-      color:var(--accent);
-      letter-spacing:.16em;
-      margin-bottom:10px;
-    }
-
-    h1 {
-      font-size:clamp(1.95rem,5vw,3.15rem);
-      line-height:1.3;
-      margin:0 0 14px;
-    }
-
-    .lead {
-      font-size:1.04rem;
-      color:var(--muted);
-      max-width:700px;
-      margin:0 auto 16px;
-    }
-
-    .message {
-      margin:24px auto 0;
-      max-width:700px;
-      padding:18px 20px;
-      background:#fffaf1;
-      border:1px solid var(--border);
-      border-radius:14px;
-      font-weight:700;
-      color:var(--accent);
-    }
-
-    .updated {
-      display:inline-block;
-      margin-top:18px;
-      padding:5px 12px;
-      border-radius:999px;
-      background:var(--accent-soft);
-      color:var(--accent);
-      font-size:.84rem;
-    }
-
-    nav {
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:8px;
-      margin:8px 0 26px;
-    }
-
-    nav a {
-      text-decoration:none;
-      background:#fff;
-      border:1px solid var(--border);
-      padding:7px 12px;
-      border-radius:999px;
-      font-size:.9rem;
-      color:var(--text);
-    }
-
-    nav a:hover {
-      background:var(--accent-soft);
-    }
-
-    .card {
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:28px;
-      margin:20px 0;
-      box-shadow:0 8px 24px rgba(0,0,0,.035);
-    }
-
-    h2 {
-      font-size:1.27rem;
-      margin:0 0 16px;
-    }
-
-    .info {
-      display:grid;
-      grid-template-columns:120px 1fr;
-      gap:12px 16px;
-    }
-
-    .label {
-      font-weight:700;
-      color:var(--accent);
-    }
-
-    .notice {
-      background:#fffaf1;
-      border-left:4px solid var(--accent);
-      padding:16px 18px;
-      border-radius:10px;
-    }
-
-    .status {
-      display:grid;
-      gap:12px;
-    }
-
-    .status-item {
-      display:grid;
-      grid-template-columns:110px 1fr;
-      gap:14px;
-      align-items:start;
-      border-bottom:1px solid var(--border);
-      padding-bottom:12px;
-    }
-
-    .status-item:last-child {
-      border-bottom:0;
-      padding-bottom:0;
-    }
-
-    .status-date {
-      font-size:.88rem;
-      color:var(--muted);
-    }
-
-    .badge {
-      display:inline-block;
-      font-size:.78rem;
-      padding:2px 9px;
-      border-radius:999px;
-      background:#edf4ef;
-      color:var(--ok);
-      margin-left:7px;
-    }
-
-    .video-placeholder {
-      display:grid;
-      place-items:center;
-      min-height:260px;
-      border:1px dashed #b8aa98;
-      border-radius:14px;
-      color:var(--muted);
-      background:#fcfbf8;
-      text-align:center;
-      padding:28px;
-    }
-
-    .sponsors {
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:12px;
-    }
-
-    .sponsor {
-      min-height:95px;
-      border:1px solid var(--border);
-      border-radius:14px;
-      display:grid;
-      place-items:center;
-      text-align:center;
-      padding:14px;
-      color:var(--muted);
-      background:#fcfbf8;
-    }
-
-    .map {
-      border:1px dashed #b8aa98;
-      border-radius:14px;
-      padding:30px;
-      text-align:center;
-      color:var(--muted);
-      background:#fcfbf8;
-    }
-
-    .share {
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-
-    .share a,
-    .share button {
-      appearance:none;
-      border:1px solid var(--border);
-      background:#fff;
-      color:var(--text);
-      border-radius:10px;
-      padding:9px 13px;
-      text-decoration:none;
-      font:inherit;
-      cursor:pointer;
-    }
-
-    .share a:hover,
-    .share button:hover {
-      background:var(--accent-soft);
-    }
-
-    .small {
-      font-size:.9rem;
-      color:var(--muted);
-    }
-
-    #copy-result {
-      min-height:1.5em;
-      margin-top:12px;
-    }
-
-    footer {
-      text-align:center;
-      color:var(--muted);
-      font-size:.88rem;
-      padding:36px 0 24px;
-    }
-
-    a {
-      color:var(--accent);
-    }
-
-    @media (max-width:650px) {
-      .info {
-        grid-template-columns:1fr;
-        gap:4px;
-      }
-
-      .label {
-        margin-top:8px;
-      }
-
-      .status-item {
-        grid-template-columns:1fr;
-        gap:4px;
-      }
-
-      .sponsors {
-        grid-template-columns:1fr;
-      }
-
-      .card {
-        padding:22px;
-      }
-    }
+    :root { --bg:#f6f4ef; --card:#fff; --text:#292929; --muted:#656565; --accent:#83643f; --soft:#f2eadf; --border:#e4ded3; --ok:#52745b; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif; background:var(--bg); color:var(--text); line-height:1.8; }
+    a { color:var(--accent); }
+    .wrap { max-width:920px; margin:0 auto; padding:24px; }
+    header { padding:48px 0 26px; text-align:center; }
+    .eyebrow { font-size:.85rem; letter-spacing:.14em; color:var(--accent); }
+    h1 { font-size:clamp(1.9rem,5vw,3.05rem); line-height:1.35; margin:10px 0 18px; }
+    .lead { max-width:740px; margin:0 auto 16px; font-size:1.03rem; color:var(--muted); }
+    .social-header { display:flex; justify-content:center; align-items:center; gap:12px; margin:18px auto 0; }
+    .social-circle { display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:50%; color:var(--accent); background:#fff; border:1px solid var(--border); text-decoration:none; transition:background .15s, transform .15s; }
+    .social-circle:hover,.social-circle:focus-visible { background:var(--soft); transform:translateY(-1px); }
+    .social-circle svg { width:23px; height:23px; }
+    .social-header-label { margin:8px 0 0; font-size:.78rem; color:var(--muted); }
+    .timeline { display:grid; gap:0; }
+    .timeline-row { display:grid; grid-template-columns:95px 1fr; gap:16px; border-bottom:1px solid var(--border); padding:15px 0; }
+    .timeline-row:last-child { border-bottom:0; }
+    .timeline-time { font-weight:750; color:var(--accent); font-size:1.15rem; font-variant-numeric:tabular-nums; }
+    .timeline-title { font-weight:700; }
+    .updated { display:inline-block; background:var(--soft); padding:5px 12px; border-radius:999px; font-size:.83rem; color:var(--accent); }
+    nav { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin:8px 0 26px; }
+    nav a { text-decoration:none; background:white; border:1px solid var(--border); padding:7px 12px; border-radius:999px; font-size:.9rem; color:var(--text); }
+    nav a:hover, .share a:hover, .share button:hover { background:var(--soft); }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:18px; padding:28px; margin:20px 0; box-shadow:0 8px 24px rgba(0,0,0,.035); }
+    h2 { font-size:1.28rem; margin:0 0 14px; }
+    .info { display:grid; grid-template-columns:116px 1fr; gap:10px 14px; }
+    .label { font-weight:700; color:var(--accent); }
+    .notice { margin-top:18px; border-left:4px solid var(--accent); background:#fffaf1; padding:16px 18px; border-radius:10px; }
+    .return-message { background:var(--soft); border-radius:14px; margin-top:18px; padding:18px; text-align:center; }
+    .status { display:grid; gap:13px; }
+    .status-item { display:grid; grid-template-columns:110px 1fr; gap:13px; padding-bottom:13px; border-bottom:1px solid var(--border); }
+    .status-item:last-child { border-bottom:none; padding-bottom:0; }
+    .status-date { color:var(--muted); font-size:.9rem; }
+    .badge { display:inline-block; padding:2px 8px; margin-left:8px; border-radius:999px; background:#edf4ef; color:var(--ok); font-size:.78rem; vertical-align:middle; }
+    .small { color:var(--muted); font-size:.9rem; }
+    .gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    figure { margin:0; min-width:0; }
+    .gallery img { display:block; width:100%; aspect-ratio:4 / 3; object-fit:cover; border-radius:10px; border:1px solid var(--border); }
+    figcaption { font-size:.84rem; color:var(--muted); margin-top:6px; }
+    .video-placeholder { background:#fcfbf8; border:1px dashed #b8aa98; border-radius:14px; padding:24px; text-align:center; }
+    .sponsors { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .sponsor { min-height:92px; border:1px solid var(--border); border-radius:12px; padding:14px; display:grid; place-items:center; text-align:center; color:var(--muted); font-size:.9rem; }
+    .map { padding:24px; text-align:center; border-radius:14px; border:1px dashed #b8aa98; background:#fcfbf8; }
+    .share { display:flex; flex-wrap:wrap; gap:10px; }
+    .share a, .share button { appearance:none; border:1px solid var(--border); background:#fff; border-radius:10px; padding:9px 13px; text-decoration:none; color:var(--text); font:inherit; cursor:pointer; }
+    .copy-fallback { display:none; margin-top:10px; width:100%; max-width:100%; padding:9px 12px; font:inherit; border:1px solid var(--border); border-radius:8px; }
+    footer { text-align:center; color:var(--muted); font-size:.87rem; padding:36px 0 24px; }
+    @media (max-width:650px) { .wrap { padding:16px; } .card { padding:22px; } .info,.status-item { grid-template-columns:1fr; gap:4px; } .label { margin-top:8px; } .gallery { grid-template-columns:1fr; } .gallery img { aspect-ratio:4 / 3; } .sponsors { grid-template-columns:1fr; } .timeline-row { grid-template-columns:75px 1fr; gap:12px; } }
   </style>
 </head>
-
-
 <body>
-
-<div class="wrap">
-
-  <!-- =========================
-       ヘッダー
-       ========================= -->
-
-  <header>
-
-    <div class="eyebrow">
-      TIME CAPSULE 25 YEARS
-    </div>
-
-    <h1>
-      タイムカプセル<br>
-      開封・返却のご案内
-    </h1>
-
-    <p class="lead">
-      25年前にお預かりしたタイムカプセルが満期を迎えました。
-      開封・返却に関する最新情報を、このページでお知らせします。
-    </p>
-
-    <div class="message">
-      25年前のタイムカプセルを、<br>
-      ひとり残らず皆さんのもとへ。
-    </div>
-
-    <div class="updated">
-      最終更新：2026年10月1日
-    </div>
-
-  </header>
-
-
-  <!-- =========================
-       ナビゲーション
-       ========================= -->
-
-  <nav aria-label="ページ内メニュー">
-
-    <a href="#event">開催案内</a>
-
-    <a href="#news">最新情報</a>
-
-    <a href="#video">動画</a>
-
-    <a href="#sponsors">協賛・協力</a>
-
-    <a href="#access">返却会場案内</a>
-
-    <a href="#contact">お問い合わせ</a>
-
-    <a href="#social">公式SNS</a>
-
-  </nav>
-
-
-  <!-- =========================
-       開催日時・返却場所
-       ========================= -->
-
-  <section class="card" id="event">
-
-    <h2>開催日時・場所</h2>
-
-    <div class="info">
-
-      <div class="label">
-        日時
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">TIME CAPSULE 25 YEARS</div>
+      <h1>市民タイムカプセル<br>開封・返却のご案内</h1>
+      <p class="lead">25年前に託されたタイムカプセルは、2026年10月5日に無事掘り出されました。次はいよいよ、持ち主の皆さまへの返却です。</p>
+      <span class="updated">最終更新：2026年10月12日</span>
+      <div class="social-header" aria-label="公式SNS">
+        <a class="social-circle" href="https://www.instagram.com/timecap_jimu/" target="_blank" rel="noopener noreferrer" aria-label="公式Instagramを開く" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="18.1" cy="5.9" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="social-circle" href="https://x.com/timecap_jimu" target="_blank" rel="noopener noreferrer" aria-label="公式Xを開く" title="X（旧Twitter）">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 2.5h3.1l-6.8 7.8 8 11.2h-6.2l-4.9-6.9-6.1 6.9H1.6l7.6-8.7L1.5 2.5h6.4l4.4 6.2 5.3-6.2Zm-1.1 17.1h1.7L6.9 4.3H5.1l11.4 15.3Z"/></svg>
+        </a>
       </div>
+      <p class="social-header-label">公式Instagram・X</p>
+    </header>
 
-      <div>
-        令和8年11月22日（日） 9:00〜17:00
+    <nav aria-label="ページ内メニュー">
+      <a href="#event">返却案内</a><a href="#schedule">当日の予定</a><a href="#news">最新情報</a><a href="#photos">掘り出し写真</a><a href="#video">動画</a><a href="#access">会場案内</a><a href="#contact">お問い合わせ</a><a href="#sns">公式SNS</a>
+    </nav>
+
+    <section class="card" id="event">
+      <h2>返却日時・場所</h2>
+      <div class="info">
+        <div class="label">日時</div><div><strong>2026年11月22日（日）9:00〜17:00</strong></div>
+        <div class="label">場所</div><div>館林市城沼公民館</div>
+        <div class="label">住所</div><div>群馬県館林市松原1−22−22</div>
+        <div class="label">お持ちいただくもの</div><div>お知らせハガキ・申込控、またはご本人を確認できる書類</div>
       </div>
+      <div class="return-message"><strong>25年前のタイムカプセルを、ひとり残らず皆さんのもとへ。</strong><br>転居された方、ご家族・ご友人からの情報もお待ちしています。</div>
+      <p class="notice">ご本人がお亡くなりの場合や代理の方が受け取る場合は、必要書類等について事前に事務局までご相談ください。返却方法に変更がある場合は、このページでお知らせします。</p>
+    </section>
 
-
-      <div class="label">
-        場所
+    <section class="card" id="schedule">
+      <h2>11月22日 当日のスケジュール（予定）</h2>
+      <div class="timeline">
+        <div class="timeline-row"><div class="timeline-time">9:00</div><div><div class="timeline-title">開場</div><div class="small">会場：館林市城沼公民館</div></div></div>
+        <div class="timeline-row"><div class="timeline-time">9:30</div><div><div class="timeline-title">開封セレモニー</div><div class="small">来賓同席のもと、タイムカプセルの開封を予定しています。</div></div></div>
       </div>
+      <p class="notice">当日の進行や返却受付の詳細は、決まり次第こちらでお知らせします。スケジュールは変更となる場合があります。</p>
+    </section>
 
-      <div>
-        館林市城沼公民館
-      </div>
-
-
-      <div class="label">
-        住所
-      </div>
-
-      <div>
-        群馬県館林市松原1−22−22
-      </div>
-
-    </div>
-
-
-    <p class="notice" style="margin-top:18px">
-
-      当日の詳細や変更事項がある場合は、
-      このページで随時お知らせします。
-
-    </p>
-
-  </section>
-
-
-  <!-- =========================
-       最新情報
-       ========================= -->
-
-  <section class="card" id="news">
-
-    <h2>最新情報・進捗</h2>
-
-    <div class="status">
-
-
-      <!-- 2026年10月5日 -->
-
-      <div class="status-item">
-
-        <div class="status-date">
-          2026年10月5日
+    <section class="card" id="news">
+      <h2>最新情報・進捗</h2>
+      <div class="status">
+        <div class="status-item">
+          <div class="status-date">2026年10月12日</div>
+          <div><strong>11月22日の開場・開封セレモニー予定を掲載しました</strong><span class="badge">予定</span><br><span class="small">9:00開場、9:30から来賓同席の開封セレモニーを予定しています。詳細は「当日のスケジュール」をご覧ください。</span></div>
         </div>
-
-        <div>
-
-          <strong>
-            タイムカプセル掘り出し予定
-          </strong>
-
-          <span class="badge">
-            予定
-          </span>
-
-          <br><br>
-
-          <span class="small">
-
-            10月5日 9:00より、
-            たてばやし向井千秋記念子ども科学館にて
-            タイムカプセルの掘り出し作業を行う予定です。
-
-            <br><br>
-
-            施設の特性や運営上の都合により、
-            掘り出し作業を実施できる日が限られているため、
-            この日に作業を行います。
-
-            <br><br>
-
-            掘り出したタイムカプセルは、
-            11月22日の返却に向けて準備を進めます。
-
-          </span>
-
+        <div class="status-item">
+          <div class="status-date">2026年10月12日</div>
+          <div><strong>掘り出し作業の記録写真を公開しました</strong><span class="badge">NEW</span><br><span class="small">10月5日の掘り出し現場の写真を掲載しました。短編動画もInstagram・Xでの公開に向けて準備しています。</span></div>
         </div>
-
-      </div>
-
-
-      <!-- 2026年10月1日 -->
-
-      <div class="status-item">
-
-        <div class="status-date">
-          2026年10月1日
+        <div class="status-item">
+          <div class="status-date">2026年10月5日</div>
+          <div><strong>タイムカプセルの掘り出し作業が無事完了しました</strong><span class="badge">完了</span><br><span class="small">たてばやし向井千秋記念子ども科学館にて、25年前に埋設されたタイムカプセルの掘り出し作業を行い、無事に終了しました。<br>施設の特性や運営上の事情から掘り出し作業を行える日が限られているため、返却日に先立って実施しました。<br>11月22日の返却に向けて準備を進めています。</span></div>
         </div>
-
-        <div>
-
-          <strong>
-            公式Instagramで情報発信を開始しました
-          </strong>
-
-          <span class="badge">
-            NEW
-          </span>
-
-          <br>
-
-          <span class="small">
-
-            25年前の写真や、
-            タイムカプセル返却に関する最新情報を
-            Instagramでもお知らせします。
-
-          </span>
-
+        <div class="status-item">
+          <div class="status-date">2026年10月1日</div>
+          <div><strong>Instagramで返却のお知らせを開始しました</strong><br><span class="small">25年前の記録写真とともに、情報提供と周知へのご協力をお願いしています。</span></div>
         </div>
-
-      </div>
-
-
-      <!-- 2026年9月10日 -->
-
-      <div class="status-item">
-
-        <div class="status-date">
-          2026年9月10日
+        <div class="status-item">
+          <div class="status-date">2026年9月10日</div>
+          <div><strong>案内ページを公開しました</strong><br><span class="small">返却日時・場所などの基本情報を掲載しました。</span></div>
         </div>
-
-        <div>
-
-          <strong>
-            案内ページを公開しました
-          </strong>
-
-          <br>
-
-          <span class="small">
-
-            開催日時・場所などの基本情報を掲載しました。
-
-          </span>
-
-        </div>
-
       </div>
+    </section>
 
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       動画
-       ========================= -->
-
-  <section class="card" id="video">
-
-    <h2>動画</h2>
-
-    <p>
-      準備の様子、当時の写真、
-      開封当日の映像などを掲載します。
-    </p>
-
-    <div class="video-placeholder">
-
-      YouTube動画公開後、
-      ここに埋め込みます。
-
-      <br>
-
-      <span class="small">
-        限定公開動画の埋め込み
-      </span>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       協賛・協力
-       ========================= -->
-
-  <section class="card" id="sponsors">
-
-    <h2>協賛・協力</h2>
-
-    <p class="small">
-
-      協賛・協力いただく企業・団体が決まり次第、
-      こちらに掲載します。
-
-    </p>
-
-
-    <div class="sponsors">
-
-      <div class="sponsor">
-
-        協賛企業・団体<br>
-        ロゴ掲載欄
-
+    <section class="card" id="photos">
+      <h2>10月5日 掘り出し作業の記録</h2>
+      <p class="small">現場で撮影した実際の写真です。写真は元の記録を生かし、掲載用に容量だけ調整しています。</p>
+      <div class="gallery">
+        <figure><img src="images/before.jpg" alt="掘り出し前の市民タイムカプセル記念碑" loading="lazy"><figcaption>① 掘り出し前の記念碑</figcaption></figure>
+        <figure><img src="images/buried.jpg" alt="地中から姿を現した青い保護シートに包まれたカプセル" loading="lazy"><figcaption>② 地中から姿を現したカプセル</figcaption></figure>
+        <figure><img src="images/recovered.jpg" alt="掘り出され地上に置かれた市民タイムカプセル" loading="lazy"><figcaption>③ 25年ぶりに地上へ</figcaption></figure>
       </div>
+    </section>
 
+    <section class="card" id="video">
+      <h2>掘り出し記録動画</h2>
+      <p>2026年10月5日の掘り出し作業をまとめた約1分の予告編を、InstagramとXで公開予定です。</p>
+      <div class="video-placeholder"><strong>短編予告動画：公開準備中</strong><br><span class="small">公開後は公式Instagram・Xからご覧いただけます。記録映像の長編版も別途検討しています。</span></div>
+    </section>
 
-      <div class="sponsor">
+    <section class="card" id="sponsors">
+      <h2>協賛・協力</h2>
+      <p class="small">協賛・協力いただく企業・団体が決まり次第、こちらに掲載します。</p>
+      <div class="sponsors"><div class="sponsor">協賛企業・団体<br>ロゴ掲載欄</div><div class="sponsor">協力企業・団体<br>ロゴ掲載欄</div><div class="sponsor">協力者・団体<br>掲載欄</div></div>
+    </section>
 
-        協力企業・団体<br>
-        ロゴ掲載欄
+    <section class="card" id="access">
+      <h2>返却会場案内</h2>
+      <div class="map"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%BE%A4%E9%A6%AC%E7%9C%8C%E9%A4%A8%E6%9E%97%E5%B8%82%E6%9D%BE%E5%8E%9F1-22-22" target="_blank" rel="noopener noreferrer">Googleマップで開く</a></div>
+    </section>
 
+    <section class="card" id="contact">
+      <h2>お問い合わせ・情報提供</h2>
+      <p>市民タイムカプセル事務局<br>メール：<a href="mailto:tcapjimu@gmail.com">tcapjimu@gmail.com</a></p>
+      <p class="small">25年前に参加された方、転居された方をご存じの方、ご家族・ご友人からの情報もお待ちしています。</p>
+    </section>
+
+    <section class="card" id="sns">
+      <h2>公式SNS・共有</h2>
+      <p class="small">当時参加された方やお知り合いへの周知・拡散にご協力ください。</p>
+      <div class="share">
+        <a href="https://www.instagram.com/timecap_jimu/" target="_blank" rel="noopener noreferrer">公式Instagramを見る</a>
+        <a href="https://x.com/timecap_jimu" target="_blank" rel="noopener noreferrer">公式Xを見る</a>
+        <a id="share-line" href="https://line.me/R/msg/text/?https%3A%2F%2Fshimintimec.github.io%2Fstc%2F" target="_blank" rel="noopener noreferrer">LINEで共有</a>
+        <button id="copy-link" type="button">URLをコピー</button>
       </div>
-
-
-      <div class="sponsor">
-
-        協力者・団体<br>
-        掲載欄
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       返却会場
-       ========================= -->
-
-  <section class="card" id="access">
-
-    <h2>
-      返却会場案内
-    </h2>
-
-    <div class="map">
-
-      <a
-        href="https://www.google.com/maps?q=群馬県館林市松原1-22-22&ll=36.243013,139.537889&z=18"
-        target="_blank"
-        rel="noopener"
-        title="館林市城沼公民館の地図を開く">
-
-        Googleマップで開く
-
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       お問い合わせ
-       ========================= -->
-
-  <section class="card" id="contact">
-
-    <h2>
-      お問い合わせ
-    </h2>
-
-    <p>
-
-      市民タイムカプセル事務局
-
-      <br>
-
-      メール：
-
-      <a href="mailto:tcapjimu@gmail.com">
-
-        tcapjimu@gmail.com
-
-      </a>
-
-    </p>
-
-  </section>
-
-
-  <!-- =========================
-       公式SNS
-       ========================= -->
-
-  <section class="card" id="social">
-
-    <h2>
-      公式SNS・共有
-    </h2>
-
-    <p class="small">
-
-      公式SNSでも最新情報をお知らせしています。
-
-      <br>
-
-      当時参加された方やお知り合いへの
-      周知にもご協力ください。
-
-    </p>
-
-
-    <div class="share">
-
-
-      <!-- X -->
-
-      <a
-        id="official-x"
-        href="https://x.com/timecap_jimu"
-        target="_blank"
-        rel="noopener">
-
-        公式Xを見る
-
-      </a>
-
-
-      <!-- Instagram -->
-
-      <a
-        id="official-instagram"
-        href="https://www.instagram.com/timecap_jimu/"
-        target="_blank"
-        rel="noopener">
-
-        公式Instagramを見る
-
-      </a>
-
-
-      <!-- LINE共有 -->
-
-      <a
-        id="share-line"
-        href="#"
-        target="_blank"
-        rel="noopener">
-
-        LINEで共有
-
-      </a>
-
-
-      <!-- URLコピー -->
-
-      <button
-        id="copy-link"
-        type="button">
-
-        URLをコピー
-
-      </button>
-
-    </div>
-
-
-    <p
-      id="copy-result"
-      class="small"
-      aria-live="polite">
-    </p>
-
-  </section>
-
-
-  <!-- =========================
-       フッター
-       ========================= -->
-
-  <footer>
-
-    © 市民タイムカプセル事務局
-
-  </footer>
-
-</div>
-
-
-<!-- =========================
-     JavaScript
-     ========================= -->
-
-<script>
-
-  /*
-   * 現在表示しているホームページのURL
-   */
-
-  const pageUrl = location.href;
-
-
-  /*
-   * LINE共有
-   */
-
-  const lineLink =
-    document.getElementById('share-line');
-
-  if (lineLink) {
-
-    const lineMessage =
-      '市民タイムカプセル返却のご案内\n' +
-      pageUrl;
-
-    lineLink.href =
-      'https://line.me/R/msg/text/?' +
-      encodeURIComponent(lineMessage);
-
-  }
-
-
-  /*
-   * URLコピー
-   *
-   * HTTPS環境では Clipboard API を使用。
-   * 使用できない場合は旧方式に切り替えます。
-   */
-
-  const copyButton =
-    document.getElementById('copy-link');
-
-  const copyResult =
-    document.getElementById('copy-result');
-
-
-  async function copyPageUrl() {
-
-    try {
-
-      /*
-       * HTTPSなどの安全な環境
-       */
-
-      if (
-        navigator.clipboard &&
-        window.isSecureContext
-      ) {
-
-        await navigator.clipboard.writeText(
-          pageUrl
-        );
-
+      <p id="copy-result" class="small" aria-live="polite"></p>
+      <input id="copy-fallback" class="copy-fallback" type="text" value="https://shimintimec.github.io/stc/" readonly aria-label="コピー用URL">
+    </section>
+
+    <footer>© 市民タイムカプセル事務局</footer>
+  </div>
+  <script>
+    // ローカルプレビューでfile://をコピーしないよう、常に公開URLを使用。
+    const publicUrl = 'https://shimintimec.github.io/stc/';
+    const lineLink = document.getElementById('share-line');
+    lineLink.href = 'https://line.me/R/msg/text/?' + encodeURIComponent('市民タイムカプセル返却のご案内\n' + publicUrl);
+
+    const copyButton = document.getElementById('copy-link');
+    const copyResult = document.getElementById('copy-result');
+    const copyFallback = document.getElementById('copy-fallback');
+
+    function legacyCopy(text) {
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      temp.setAttribute('readonly', '');
+      temp.style.position = 'fixed';
+      temp.style.left = '-9999px';
+      document.body.appendChild(temp);
+      temp.focus();
+      temp.select();
+      const ok = document.execCommand('copy');
+      temp.remove();
+      return ok;
+    }
+
+    copyButton.addEventListener('click', async () => {
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          try {
+            await navigator.clipboard.writeText(publicUrl);
+          } catch (_) {
+            if (!legacyCopy(publicUrl)) throw new Error('copy failed');
+          }
+        } else if (!legacyCopy(publicUrl)) {
+          throw new Error('copy failed');
+        }
+        copyResult.textContent = 'URLをコピーしました ✓';
+        copyFallback.style.display = 'none';
+      } catch (_) {
+        copyResult.textContent = '自動コピーできませんでした。下のURLを選択してコピーしてください。';
+        copyFallback.style.display = 'block';
+        copyFallback.focus();
+        copyFallback.select();
       }
-
-      /*
-       * Clipboard APIが使えない場合
-       */
-
-      else {
-
-        const temp =
-          document.createElement('textarea');
-
-        temp.value = pageUrl;
-
-        temp.setAttribute(
-          'readonly',
-          ''
-        );
-
-        temp.style.position = 'fixed';
-
-        temp.style.left = '-9999px';
-
-        temp.style.top = '0';
-
-        document.body.appendChild(temp);
-
-        temp.focus();
-
-        temp.select();
+    });
+  </script>
+</body>
+</html>
