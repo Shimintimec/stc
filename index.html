@@ -11,7 +11,7 @@
   <meta property="og:description" content="25年の時を越え、タイムカプセルの掘り出しが無事完了。11月22日、持ち主の皆さまへ返却します。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shimintimec.github.io/stc/">
- <style>
+  <style>
     :root { --bg:#f6f4ef; --card:#fff; --text:#292929; --muted:#656565; --accent:#83643f; --soft:#f2eadf; --border:#e4ded3; --ok:#52745b; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
@@ -54,6 +54,7 @@
     figcaption { font-size:.84rem; color:var(--muted); margin-top:6px; }
     .video-placeholder { background:#fcfbf8; border:1px dashed #b8aa98; border-radius:14px; padding:24px; text-align:center; }
     .sponsors { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .sponsors-confirmed { grid-template-columns:repeat(2,minmax(0,1fr)); }
     .sponsor { min-height:92px; border:1px solid var(--border); border-radius:12px; padding:14px; display:grid; place-items:center; text-align:center; color:var(--muted); font-size:.9rem; }
     .map { padding:24px; text-align:center; border-radius:14px; border:1px dashed #b8aa98; background:#fcfbf8; }
     .share { display:flex; flex-wrap:wrap; gap:10px; }
@@ -69,7 +70,7 @@
       <div class="eyebrow">TIME CAPSULE 25 YEARS</div>
       <h1>市民タイムカプセル<br>開封・返却のご案内</h1>
       <p class="lead">25年前に託されたタイムカプセルは、2026年10月5日に無事掘り出されました。次はいよいよ、持ち主の皆さまへの返却です。</p>
-      <span class="updated">最終更新：2026年10月12日</span>
+      <span class="updated">最終更新：2026年10月15日</span>
       <div class="social-header" aria-label="公式SNS">
         <a class="social-circle" href="https://www.instagram.com/timecap_jimu/" target="_blank" rel="noopener noreferrer" aria-label="公式Instagramを開く" title="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="18.1" cy="5.9" r="1" fill="currentColor" stroke="none"/></svg>
@@ -152,9 +153,19 @@
     </section>
 
     <section class="card" id="sponsors">
-      <h2>協賛・協力</h2>
-      <p class="small">協賛・協力いただく企業・団体が決まり次第、こちらに掲載します。</p>
-      <div class="sponsors"><div class="sponsor">協賛企業・団体<br>ロゴ掲載欄</div><div class="sponsor">協力企業・団体<br>ロゴ掲載欄</div><div class="sponsor">協力者・団体<br>掲載欄</div></div>
+      <h2>協賛・後援</h2>
+      <p>本事業に温かいご支援とご後援を賜りましたことに、心より御礼申し上げます。</p>
+      <div class="sponsors sponsors-confirmed">
+        <div class="sponsor" style="display:block;min-height:110px;">
+          <div class="label">協賛</div>
+          <strong style="display:block;font-size:1.12rem;margin-top:10px;color:var(--text);">アサヒ飲料株式会社</strong>
+        </div>
+        <div class="sponsor" style="display:block;min-height:110px;">
+          <div class="label">後援</div>
+          <strong style="display:block;font-size:1.12rem;margin-top:10px;color:var(--text);">館林商工会議所</strong>
+        </div>
+      </div>
+      <p class="small">※企業・団体名は敬称略。</p>
     </section>
 
     <section class="card" id="access">
